@@ -15,11 +15,12 @@ object Demo {
 
     val stage = new PIXI.Container()
     val texture = Texture.fromImage("bunny.png")
-    val bunny = new PIXI.Sprite(texture)
-    bunny.anchor.x = 0.5
-    bunny.anchor.y = 0.5
-    bunny.position.x = 200
-    bunny.position.y = 150
+    val bunny = new PIXI.Sprite(texture) {
+      anchor.x = 0.5
+      anchor.y = 0.5
+      position.x = 200
+      position.y = 150
+    }
     stage.addChild(bunny)
 
     def animate(): Unit = {
