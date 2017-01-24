@@ -1,4 +1,4 @@
-package com.outr.pixijs.PIXI
+package com.outr.pixijs
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSName

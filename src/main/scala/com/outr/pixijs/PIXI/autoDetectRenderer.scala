@@ -1,5 +1,7 @@
 package com.outr.pixijs.PIXI
 
+import com.outr.pixijs.RendererOptions
+
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSName
 

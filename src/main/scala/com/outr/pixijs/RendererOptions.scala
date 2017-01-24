@@ -1,9 +1,9 @@
-package com.outr.pixijs.PIXI
+package com.outr.pixijs
 
 import org.scalajs.dom.html
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSName, ScalaJSDefined}
+import scala.scalajs.js.annotation.ScalaJSDefined
 
 @ScalaJSDefined
 trait RendererOptions extends js.Object {

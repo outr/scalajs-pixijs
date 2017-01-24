@@ -5,7 +5,7 @@ import scala.scalajs.js.annotation.JSName
 
 @js.native
 @JSName("PIXI.Container")
-class Container extends js.Object {
-  def addChild(sprite: Sprite): Unit = js.native
+class Container extends DisplayObject {
+  def addChild(displayObject: DisplayObject): Unit = js.native
 }
 

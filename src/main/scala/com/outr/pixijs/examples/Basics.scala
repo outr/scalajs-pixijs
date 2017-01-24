@@ -1,16 +1,16 @@
-package com.outr.pixijs
+package com.outr.pixijs.examples
 
-import com.outr.pixijs.PIXI.{RendererOptions, Texture}
-
-import scala.scalajs.js.annotation.JSExportTopLevel
+import com.outr.pixijs._
 import org.scalajs.dom._
 
-object Demo {
-  @JSExportTopLevel("demo")
+import scala.scalajs.js.annotation.JSExportTopLevel
+
+object Basics {
+  @JSExportTopLevel("basics")
   def main(): Unit = {
     val renderer = PIXI.autoDetectRenderer(800, 600, new RendererOptions {
       backgroundColor = 0x1099bb
-    }, noWebGL = true)
+    })
     document.body.appendChild(renderer.view)
 
     val stage = new PIXI.Container()
