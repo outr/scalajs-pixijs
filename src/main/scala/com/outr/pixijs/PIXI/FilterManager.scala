@@ -1,6 +1,6 @@
 package com.outr.pixijs.PIXI
 
-import com.sun.prism.RenderTarget
+import org.scalajs.dom.raw.WebGLShader
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSName
@@ -32,5 +32,5 @@ class FilterManager(renderer: WebGLRenderer) extends WebGLManager(renderer) {
 
   def returnRenderTarget(renderTarget: RenderTarget): Unit = js.native
 
-  def syncUniforms(shader: GLShader, filter: Filter): Unit = js.native
+  def syncUniforms(shader: WebGLShader, filter: Filter): Unit = js.native
 }
