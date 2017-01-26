@@ -1,5 +1,7 @@
 package com.outr.pixijs.PIXI
 
+import com.outr.pixijs.PIXI.interaction.InteractionEvent
+
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSName
 import scala.scalajs.js.|
@@ -11,6 +13,7 @@ class DisplayObject extends js.Object {
   var cacheAsBitmap: Boolean = js.native
   var filterArea: Rectangle = js.native
   var filters: Array[Filter] = js.native
+  var interactive: Boolean = js.native
   def localTransform: Matrix = js.native
   var mask: Graphics | Sprite = js.native
   def parent: Container = js.native
@@ -47,4 +50,6 @@ class DisplayObject extends js.Object {
   def toGlobal(position: Point, point: Point, skipUpdate: Boolean = js.native): Point = js.native
   def toLocal(position: Point, from: DisplayObject, point: Point, skipUpdate: Boolean = js.native): Point = js.native
   def updateTransform(): Unit = js.native
+
+  def on(eventType: String, listener: js.Function1[InteractionEvent, Unit]): Unit = js.native
 }
