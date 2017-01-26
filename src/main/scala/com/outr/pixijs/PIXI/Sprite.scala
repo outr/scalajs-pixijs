@@ -1,19 +1,25 @@
 package com.outr.pixijs.PIXI
 
-import com.outr.pixijs.{PIXI, Texture}
+import org.scalajs.dom.raw.{HTMLCanvasElement, HTMLVideoElement}
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.|
 
 @js.native
 @JSName("PIXI.Sprite")
 class Sprite(texture: Texture) extends Container {
-  def anchor: Anchor = js.native
+  var anchor: Anchor = js.native
+  var blendMode: Double = js.native
+  var pluginName: String = js.native
+  var tint: Double = js.native
 }
 
 @js.native
 @JSName("PIXI.Sprite")
 object Sprite extends js.Object {
+  def from(source: Double | String | BaseTexture | HTMLCanvasElement | HTMLVideoElement): Texture = js.native
+  def fromFrame(frameId: String): Sprite = js.native
   def fromImage(imageId: String,
                 crossorigin: Boolean = js.native,
                 scaleMode: Double = js.native): Sprite = js.native

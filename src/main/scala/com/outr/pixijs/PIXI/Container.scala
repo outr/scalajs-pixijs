@@ -7,6 +7,8 @@ import scala.scalajs.js.|
 @js.native
 @JSName("PIXI.Container")
 class Container extends DisplayObject {
+  var width: Double = js.native
+  var height: Double = js.native
   def children: Array[DisplayObject] = js.native
 
   def _calculateBounds(): Unit = js.native

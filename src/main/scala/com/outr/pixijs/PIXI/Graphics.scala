@@ -1,7 +1,5 @@
 package com.outr.pixijs.PIXI
 
-import com.outr.pixijs.Texture
-
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSName
 import scala.scalajs.js.|

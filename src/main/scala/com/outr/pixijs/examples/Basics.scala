@@ -14,7 +14,7 @@ object Basics {
     document.body.appendChild(renderer.view)
 
     val stage = new PIXI.Container()
-    val texture = Texture.fromImage("bunny.png")
+    val texture = PIXI.Texture.fromImage("bunny.png")
     val bunny = new PIXI.Sprite(texture) {
       anchor.x = 0.5
       anchor.y = 0.5
