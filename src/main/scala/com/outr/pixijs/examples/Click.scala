@@ -18,7 +18,7 @@ object Click {
 
     val sprite = PIXI.Sprite.fromImage("bunny.png")
 
-    val onDown = (evt: InteractionEvent) => {
+    val onDown = () => {
       sprite.scale.x += 0.3
       sprite.scale.y += 0.3
     }
