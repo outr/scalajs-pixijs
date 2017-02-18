@@ -3,6 +3,7 @@ organization := "com.outr"
 version := "4.3.5"
 
 scalaVersion := "2.12.1"
+crossScalaVersions := List("2.12.1", "2.11.8")
 sbtVersion := "0.13.13"
 
 enablePlugins(ScalaJSPlugin)
