@@ -1,6 +1,6 @@
 name := "scalajs-pixijs"
 organization := "com.outr"
-version := "4.4.3"
+version := "4.4.4-SNAPSHOT"
 
 scalaVersion := "2.12.1"
 crossScalaVersions := List("2.12.1", "2.11.8")
