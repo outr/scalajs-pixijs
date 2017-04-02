@@ -8,11 +8,12 @@ import scala.scalajs.js.|
 
 @js.native
 @JSName("PIXI.Sprite")
-class Sprite(texture: Texture) extends Container {
+class Sprite(_texture: Texture) extends Container {
   var anchor: Anchor = js.native
   var blendMode: Double = js.native
   var pluginName: String = js.native
   var tint: Double = js.native
+  var texture: Texture = js.native
 }
 
 @js.native
