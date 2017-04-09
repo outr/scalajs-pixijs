@@ -1,16 +1,25 @@
 package com.outr.pixijs.PIXI
 
+import com.outr.pixijs.PIXI.utils.EventEmitter
 import org.scalajs.dom.html
 
 import scala.scalajs.js
 
 @js.native
-class SystemRenderer extends js.Object {
-  def view: html.Canvas = js.native
+class SystemRenderer extends EventEmitter {
+  var autoResize: Boolean = js.native
+  var backgroundColor: Long = js.native
+  var clearBeforeRender: Boolean = js.native
+  var preserveDrawingBuffer: Boolean = js.native
+  var resolution: Double = js.native
+  var roundPixels: Boolean = js.native
+  var screen: Rectangle = js.native
+  var transparent: Boolean = js.native
+  var `type`: Double = js.native
+  var view: html.Canvas = js.native
+
   def width: Int = js.native
   def height: Int = js.native
-  def transparent: Boolean = js.native
-  def autoResize: Boolean = js.native
 
   def generateTexture(displayObject: DisplayObject, scaleMode: Double, resolution: Double): Texture = js.native
 
