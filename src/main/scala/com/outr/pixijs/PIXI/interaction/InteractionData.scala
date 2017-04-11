@@ -11,7 +11,7 @@ import scala.scalajs.js.|
 @JSName("PIXI.interaction.InteractionData")
 class InteractionData extends js.Object {
   def global: PIXI.Point = js.native
-  def identifier: Double = js.native
+  def identifier: String = js.native
   def originalEvent: MouseEvent | TouchEvent = js.native
   def target: PIXI.DisplayObject = js.native
   def getLocalPosition(displayObject: PIXI.DisplayObject,
