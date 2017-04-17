@@ -8,7 +8,7 @@ import scala.scalajs.js.|
 
 @js.native
 @JSName("PIXI.TextStyle")
-class TextStyle(style: StyleOptions = js.native) extends js.Object {
+class TextStyle(val style: StyleOptions = js.native) extends StyleOptions {
   def reset(): Unit = js.native
 }
 
