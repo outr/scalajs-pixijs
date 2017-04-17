@@ -12,6 +12,7 @@ class Sprite(_texture: Texture) extends Container {
   var anchor: Anchor = js.native
   var blendMode: Double = js.native
   var pluginName: String = js.native
+  var shader: Filter = js.native
   var tint: Double = js.native
   var texture: Texture = js.native
 }

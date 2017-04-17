@@ -12,6 +12,7 @@ import scala.scalajs.js.|
 class DisplayObject extends EventEmitter with InteractiveTarget {
   var alpha: Double = js.native
   var cacheAsBitmap: Boolean = js.native
+  var cursor: String = js.native
   var filterArea: Rectangle = js.native
   var filters: Array[Filter] = js.native
   def localTransform: Matrix = js.native
