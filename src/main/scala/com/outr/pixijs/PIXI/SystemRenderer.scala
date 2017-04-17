@@ -10,6 +10,7 @@ class SystemRenderer extends EventEmitter {
   var autoResize: Boolean = js.native
   var backgroundColor: Long = js.native
   var clearBeforeRender: Boolean = js.native
+  def extract: Extract = js.native
   var preserveDrawingBuffer: Boolean = js.native
   var resolution: Double = js.native
   var roundPixels: Boolean = js.native

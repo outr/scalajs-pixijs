@@ -1,10 +1,9 @@
 name := "scalajs-pixijs"
 organization := "com.outr"
-version := "4.4.4-SNAPSHOT"
+version := "4.5.0-SNAPSHOT"
 
 scalaVersion := "2.12.1"
 crossScalaVersions := List("2.12.1", "2.11.8")
-sbtVersion := "0.13.13"
 
 enablePlugins(ScalaJSPlugin)
 enablePlugins(BuildInfoPlugin)
