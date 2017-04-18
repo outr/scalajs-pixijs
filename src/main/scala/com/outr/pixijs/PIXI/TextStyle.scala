@@ -21,9 +21,10 @@ trait StyleOptions extends js.Object {
   var dropShadowBlur: js.UndefOr[Double] = js.undefined
   var dropShadowColor: js.UndefOr[String] = js.undefined
   var dropShadowDistance: js.UndefOr[Double] = js.undefined
-  var fill: js.UndefOr[String | Array[String] | Double | Array[Double] | CanvasGradient | CanvasPattern] = js.undefined
+  var fill: js.UndefOr[String | js.Array[String] | Double | CanvasGradient | CanvasPattern] = js.undefined
   var fillGradientType: js.UndefOr[Double] = js.undefined
-  var fontFamily: js.UndefOr[String | Array[String]] = js.undefined
+  var fillGradientStops: js.UndefOr[js.Array[Double]] = js.undefined
+  var fontFamily: js.UndefOr[String | js.Array[String]] = js.undefined
   var fontSize: js.UndefOr[Double | String] = js.undefined
   var fontStyle: js.UndefOr[String] = js.undefined
   var fontVariant: js.UndefOr[String] = js.undefined
