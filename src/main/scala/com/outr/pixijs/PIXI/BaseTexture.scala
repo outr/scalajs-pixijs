@@ -8,7 +8,7 @@ import scala.scalajs.js.|
 
 @js.native
 @JSName("PIXI.BaseTexture")
-class BaseTexture(val source: HTMLImageElement | HTMLCanvasElement,
+class BaseTexture(val source: HTMLImageElement | HTMLCanvasElement = js.native,
                   var scaleMode: Double = js.native,
                   var resolution: Double = js.native) extends js.Object {
   def hasLoaded: Boolean = js.native

@@ -38,7 +38,7 @@ object Text {
       wordWrapWidth = 440.0
     }
 
-    val richText = new PIXI.Text("Rich text with a lot of options and across multiple lines", style)
+    val richText = new PIXI.Text("Rich text with a lot of options and across multiple lines", new PIXI.TextStyle(style))
     richText.x = 30
     richText.y = 180
 

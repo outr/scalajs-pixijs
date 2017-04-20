@@ -36,7 +36,7 @@ class Texture extends EventEmitter {
   var height: Double = js.native
   var noFrame: Boolean = js.native
   var orig: Rectangle = js.native
-  var requiresUpdated: Boolean = js.native
+  var requiresUpdate: Boolean = js.native
   var rotate: Double = js.native
   var trim: Rectangle = js.native
   var valid: Boolean = js.native
