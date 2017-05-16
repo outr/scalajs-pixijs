@@ -1,10 +1,10 @@
 package com.outr.pixijs.PIXI
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
-@JSName("PIXI.Filter")
+@JSGlobal("PIXI.Filter")
 class Filter(vertexSrc: String = js.native,
              fragmentSrc: String = js.native,
              uniforms: js.Object = js.native) extends js.Object {
@@ -15,7 +15,7 @@ class Filter(vertexSrc: String = js.native,
 }
 
 @js.native
-@JSName("PIXI.Filter")
+@JSGlobal("PIXI.Filter")
 object Filter extends js.Object {
   def defaultFragmentSrc: String = js.native
   def defaultVertexSrc: String = js.native

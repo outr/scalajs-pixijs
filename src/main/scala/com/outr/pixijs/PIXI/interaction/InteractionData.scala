@@ -4,11 +4,11 @@ import com.outr.pixijs._
 import org.scalajs.dom.raw.{MouseEvent, TouchEvent}
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 import scala.scalajs.js.|
 
 @js.native
-@JSName("PIXI.interaction.InteractionData")
+@JSGlobal("PIXI.interaction.InteractionData")
 class InteractionData extends js.Object {
   def global: PIXI.Point = js.native
   def identifier: String = js.native

@@ -1,11 +1,11 @@
 package com.outr.pixijs.PIXI
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 import scala.scalajs.js.|
 
 @js.native
-@JSName("PIXI.Graphics")
+@JSGlobal("PIXI.Graphics")
 class Graphics extends Container {
   var blendMode: Double = js.native
   var boundsPadding: Double = js.native

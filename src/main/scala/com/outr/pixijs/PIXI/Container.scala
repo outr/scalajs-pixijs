@@ -1,11 +1,11 @@
 package com.outr.pixijs.PIXI
 
 import scala.scalajs._
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 import scala.scalajs.js.|
 
 @js.native
-@JSName("PIXI.Container")
+@JSGlobal("PIXI.Container")
 class Container extends DisplayObject {
   var width: Double = js.native
   var height: Double = js.native

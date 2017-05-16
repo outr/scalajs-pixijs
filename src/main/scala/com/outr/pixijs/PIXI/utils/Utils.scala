@@ -1,9 +1,9 @@
 package com.outr.pixijs.PIXI.utils
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 
-@JSName("PIXI.utils")
+@JSGlobal("PIXI.utils")
 @js.native
 object Utils extends js.Object {
   def uuid(): Double = js.native

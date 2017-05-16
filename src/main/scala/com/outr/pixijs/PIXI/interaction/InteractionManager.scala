@@ -3,11 +3,11 @@ package com.outr.pixijs.PIXI.interaction
 import com.outr.pixijs.PIXI._
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 import scala.scalajs.js.|
 
 @js.native
-@JSName("PIXI.interaction.InteractionManager")
+@JSGlobal("PIXI.interaction.InteractionManager")
 class InteractionManager(val renderer: CanvasRenderer | WebGLRenderer,
                          options: js.Object) extends js.Object {
   var autoPreventDefault: Boolean = js.native

@@ -4,11 +4,11 @@ import com.outr.pixijs.PIXI.interaction.InteractiveTarget
 import com.outr.pixijs.PIXI.utils.EventEmitter
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 import scala.scalajs.js.|
 
 @js.native
-@JSName("PIXI.DisplayObject")
+@JSGlobal("PIXI.DisplayObject")
 class DisplayObject extends EventEmitter with InteractiveTarget {
   var alpha: Double = js.native
   var cacheAsBitmap: Boolean = js.native

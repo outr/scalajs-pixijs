@@ -3,11 +3,11 @@ package com.outr.pixijs.PIXI
 import org.scalajs.dom.raw.{HTMLCanvasElement, HTMLImageElement}
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 import scala.scalajs.js.|
 
 @js.native
-@JSName("PIXI.BaseTexture")
+@JSGlobal("PIXI.BaseTexture")
 class BaseTexture(val source: HTMLImageElement | HTMLCanvasElement = js.native,
                   var scaleMode: Double = js.native,
                   var resolution: Double = js.native) extends js.Object {
@@ -37,7 +37,7 @@ class BaseTexture(val source: HTMLImageElement | HTMLCanvasElement = js.native,
 }
 
 @js.native
-@JSName("PIXI.BaseTexture")
+@JSGlobal("PIXI.BaseTexture")
 object BaseTexture extends js.Object {
   def fromCanvas(canvas: HTMLCanvasElement, scaleMode: Double): BaseTexture = js.native
   def fromImage(imageUrl: String,

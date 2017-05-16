@@ -4,8 +4,10 @@ import com.outr.pixijs.PIXI.utils.EventEmitter
 import org.scalajs.dom.html
 
 import scala.scalajs.js
+import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
+@JSGlobal
 class SystemRenderer extends EventEmitter {
   var autoResize: Boolean = js.native
   var backgroundColor: Long = js.native

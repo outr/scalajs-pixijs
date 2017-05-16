@@ -3,10 +3,10 @@ package com.outr.pixijs.PIXI
 import org.scalajs.dom.raw.{WebGLBuffer, WebGLFramebuffer, WebGLRenderingContext, WebGLTexture}
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
-@JSName("PIXI.RenderTarget")
+@JSGlobal("PIXI.RenderTarget")
 class RenderTarget(var gl: WebGLRenderingContext,
                    var width: Double = js.native,
                    var height: Double = js.native,

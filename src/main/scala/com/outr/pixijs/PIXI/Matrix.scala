@@ -1,12 +1,12 @@
 package com.outr.pixijs.PIXI
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 import scala.scalajs.js.typedarray.Float32Array
 import scala.scalajs.js.|
 
 @js.native
-@JSName("PIXI.Matrix")
+@JSGlobal("PIXI.Matrix")
 class Matrix extends js.Object {
   var a: Double = js.native
   var b: Double = js.native
@@ -32,7 +32,7 @@ class Matrix extends js.Object {
 }
 
 @js.native
-@JSName("PIXI.Matrix")
+@JSGlobal("PIXI.Matrix")
 object Matrix extends js.Object {
   def IDENTITY: Matrix = js.native
   def TEMP_MATRIX: Matrix = js.native

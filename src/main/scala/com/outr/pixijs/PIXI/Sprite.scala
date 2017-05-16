@@ -3,11 +3,11 @@ package com.outr.pixijs.PIXI
 import org.scalajs.dom.raw.{HTMLCanvasElement, HTMLVideoElement}
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 import scala.scalajs.js.|
 
 @js.native
-@JSName("PIXI.Sprite")
+@JSGlobal("PIXI.Sprite")
 class Sprite(_texture: Texture) extends Container {
   var anchor: Anchor = js.native
   var blendMode: Double = js.native
@@ -18,7 +18,7 @@ class Sprite(_texture: Texture) extends Container {
 }
 
 @js.native
-@JSName("PIXI.Sprite")
+@JSGlobal("PIXI.Sprite")
 object Sprite extends js.Object {
   def from(source: Double | String | BaseTexture | HTMLCanvasElement | HTMLVideoElement): Texture = js.native
   def fromFrame(frameId: String): Sprite = js.native

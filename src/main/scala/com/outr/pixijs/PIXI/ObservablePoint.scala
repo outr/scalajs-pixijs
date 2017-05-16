@@ -1,11 +1,11 @@
 package com.outr.pixijs.PIXI
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 import scala.scalajs.js.|
 
 @js.native
-@JSName("PIXI.ObservablePoint")
+@JSGlobal("PIXI.ObservablePoint")
 class ObservablePoint(var cb: js.Function0[Unit],
                       var scope: js.Object,
                       var x: Double = js.native,

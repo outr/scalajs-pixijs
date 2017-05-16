@@ -1,10 +1,10 @@
 package com.outr.pixijs.PIXI.utils
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
-@JSName("PIXI.utils.EventEmitter")
+@JSGlobal("PIXI.utils.EventEmitter")
 class EventEmitter extends js.Object {
   def listeners(event: String): js.Array[js.Function] = js.native
 

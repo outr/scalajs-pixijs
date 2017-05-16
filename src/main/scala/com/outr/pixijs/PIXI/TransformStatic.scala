@@ -1,10 +1,10 @@
 package com.outr.pixijs.PIXI
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
-@JSName("PIXI.TransformStatic")
+@JSGlobal("PIXI.TransformStatic")
 class TransformStatic extends js.Object {
   var localTransform: Matrix = js.native
   var pivot: ObservablePoint = js.native

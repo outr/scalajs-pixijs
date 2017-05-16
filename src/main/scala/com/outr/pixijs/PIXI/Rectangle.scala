@@ -1,10 +1,10 @@
 package com.outr.pixijs.PIXI
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
-@JSName("PIXI.Rectangle")
+@JSGlobal("PIXI.Rectangle")
 class Rectangle(var x: Double = js.native,
                 var y: Double = js.native,
                 var width: Double = js.native,
@@ -22,7 +22,7 @@ class Rectangle(var x: Double = js.native,
 }
 
 @js.native
-@JSName("PIXI.Rectangle")
+@JSGlobal("PIXI.Rectangle")
 object Rectangle extends js.Object {
   def EMPTY: Rectangle = js.native
 }

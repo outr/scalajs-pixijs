@@ -3,11 +3,11 @@ package com.outr.pixijs.PIXI
 import org.scalajs.dom.{CanvasGradient, CanvasPattern}
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSName, ScalaJSDefined}
+import scala.scalajs.js.annotation.{JSGlobal, ScalaJSDefined}
 import scala.scalajs.js.|
 
 @js.native
-@JSName("PIXI.TextStyle")
+@JSGlobal("PIXI.TextStyle")
 class TextStyle(val style: StyleOptions = js.native) extends StyleOptions {
   def reset(): Unit = js.native
 }

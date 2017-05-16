@@ -1,10 +1,10 @@
 package com.outr.pixijs.PIXI
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
-@JSName("PIXI.TransformBase")
+@JSGlobal("PIXI.TransformBase")
 class TransformBase extends js.Object {
   def localTransform: Matrix = js.native
   def worldTransform: Matrix = js.native

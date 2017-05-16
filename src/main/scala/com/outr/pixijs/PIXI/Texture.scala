@@ -4,11 +4,11 @@ import com.outr.pixijs.PIXI.utils.EventEmitter
 import org.scalajs.dom._
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 import scala.scalajs.js._
 
 @js.native
-@JSName("PIXI.Texture")
+@JSGlobal("PIXI.Texture")
 object Texture extends js.Object {
   def EMPTY: Texture = js.native
   def WHITE: Texture = js.native
@@ -28,7 +28,7 @@ object Texture extends js.Object {
 }
 
 @js.native
-@JSName("PIXI.Texture")
+@JSGlobal("PIXI.Texture")
 class Texture extends EventEmitter {
   var _frame: Rectangle = js.native
   var baseTexture: BaseTexture = js.native

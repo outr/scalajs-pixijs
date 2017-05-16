@@ -1,14 +1,14 @@
 package com.outr.pixijs.PIXI
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
-@JSName("PIXI.RenderTexture")
+@JSGlobal("PIXI.RenderTexture")
 class RenderTexture(baseRenderTexture: BaseRenderTexture, frame: Rectangle) extends Texture
 
 @js.native
-@JSName("PIXI.RenderTexture")
+@JSGlobal("PIXI.RenderTexture")
 object RenderTexture extends js.Object {
   def create(width: Double = js.native,
              height: Double = js.native,

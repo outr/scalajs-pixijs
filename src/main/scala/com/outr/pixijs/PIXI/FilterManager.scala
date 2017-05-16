@@ -3,10 +3,10 @@ package com.outr.pixijs.PIXI
 import org.scalajs.dom.raw.WebGLShader
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
-@JSName("PIXI.FilterManager")
+@JSGlobal("PIXI.FilterManager")
 class FilterManager(renderer: WebGLRenderer) extends WebGLManager(renderer) {
   def applyFilter(filter: Filter,
                   input: RenderTarget,
