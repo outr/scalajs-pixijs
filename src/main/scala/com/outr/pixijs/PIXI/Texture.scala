@@ -14,7 +14,7 @@ object Texture extends js.Object {
   def WHITE: Texture = js.native
 
   def from(source: Double | String | html.Element | html.Canvas | html.Video | BaseTexture): Texture = js.native
-  def fromCanvas(canvas: html.Canvas, scaleMode: Double): Texture = js.native
+  def fromCanvas(canvas: html.Canvas, scaleMode: Double = js.native, origin: String = js.native): Texture = js.native
   def fromFrame(frameId: String): Texture = js.native
   def fromImage(url: String,
                 crossorigin: Boolean = js.native,
@@ -23,8 +23,8 @@ object Texture extends js.Object {
   def fromLoader(source: html.Image | html.Canvas, imageUrl: String, name: String = js.native): Texture = js.native
   def fromVideo(video: html.Video | String, scaleMode: Double = js.native): Texture = js.native
   def fromVideoUrl(videoUrl: String, scaleMode: Double = js.native): Texture = js.native
-  def addTextureToCache(texture: Texture, id: String): Unit = js.native
-  def removeTextureFromCache(id: String): Texture = js.native
+  def addToCache(texture: Texture, id: String): Unit = js.native
+  def removeFromCache(id: String): Texture = js.native
 }
 
 @js.native
