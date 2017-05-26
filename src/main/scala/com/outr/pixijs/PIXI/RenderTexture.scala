@@ -5,7 +5,7 @@ import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
 @JSGlobal("PIXI.RenderTexture")
-class RenderTexture(baseRenderTexture: BaseRenderTexture, frame: Rectangle) extends Texture
+class RenderTexture(baseRenderTexture: BaseRenderTexture, frame: Rectangle) extends Texture(baseRenderTexture)
 
 @js.native
 @JSGlobal("PIXI.RenderTexture")

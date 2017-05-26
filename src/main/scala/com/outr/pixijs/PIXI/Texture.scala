@@ -29,16 +29,15 @@ object Texture extends js.Object {
 
 @js.native
 @JSGlobal("PIXI.Texture")
-class Texture extends EventEmitter {
+class Texture(var baseTexture: BaseTexture,
+              var frame: Rectangle = js.native,
+              var orig: Rectangle = js.native,
+              var trim: Rectangle = js.native,
+              var rotate: Double = js.native) extends EventEmitter {
   var _frame: Rectangle = js.native
-  var baseTexture: BaseTexture = js.native
-  var frame: Rectangle = js.native
   var height: Double = js.native
   var noFrame: Boolean = js.native
-  var orig: Rectangle = js.native
   var requiresUpdate: Boolean = js.native
-  var rotate: Double = js.native
-  var trim: Rectangle = js.native
   var valid: Boolean = js.native
   var width: Double = js.native
 
