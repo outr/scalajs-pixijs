@@ -9,8 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobal, JSName}
 @JSGlobal("PIXI")
 object autoDetectRenderer extends js.Object {
   @JSName("autoDetectRenderer")
-  def apply(width: Int,
-            height: Int,
-            options: RendererOptions = js.native,
-            noWebGL: Boolean = js.native): SystemRenderer = js.native
+  def apply(options: RendererOptions): SystemRenderer = js.native
 }

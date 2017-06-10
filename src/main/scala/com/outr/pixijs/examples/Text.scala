@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.JSExportTopLevel
 object Text {
   @JSExportTopLevel("text")
   def main(): Unit = {
-    val renderer = PIXI.autoDetectRenderer(800, 600, new RendererOptions {
+    val renderer = PIXI.autoDetectRenderer(new RendererOptions {
       backgroundColor = 0x1099bb
     })
     document.body.appendChild(renderer.view)
